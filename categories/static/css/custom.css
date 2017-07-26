@@ -1,0 +1,117 @@
+body {
+	padding-top: 50px;
+	color: #959595;
+}
+
+.navbar-inverse {
+	color: #fff;
+	background-color: #24b8d7;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color:#fff;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+	padding-top: 240px;
+    padding-bottom: 240px;
+    margin-right: auto;
+    margin-left: auto;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    
+	background-color: #0F4B57;
+}
+
+.navbar-header {
+    height: 100%;
+    top: 0;
+}
+
+.navbar-brand {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+}
+
+.navbar-collapse {
+	border-width: 0 0 0px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+	background-color: #294F57;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	
+	color: #000;
+    background-color: #0F4B57;
+}
+
+img {
+    
+    vertical-align: middle;
+}
+
+.jumbotron {
+	height: 600px;
+	background-image: url("../img/welcome.jpeg");
+	background-size: cover;
+	color: #fff; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 0px;
+}
+
+.welcome-container-image {
+	
+	padding-bottom: 10px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bg-1 {
+	padding-top: 480px;
+    padding-bottom: 480px;
+}
+
+.bg-2 {
+
+	background-color: #D77724;
+	color: #ffffff;
+		padding-top: 480px;
+    padding-bottom: 480px;
+}
+
+.bg-3 {
+
+	background-color: #575757;
+	color: #ffffff;
+		padding-top: 480px;
+    padding-bottom: 480px;
+}
+
+.col-sm-6 {
+
+}

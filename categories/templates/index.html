@@ -1,0 +1,124 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<title>NanO3</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel=stylesheet href="{% static 'css/bootstrap.min.css' %}">
+			<link rel=stylesheet href="{% static 'css/custom.css' %}" />
+			<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>		
+			<script src="{% static 'js/bootstrap.min.js' %}"></script>		
+			<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+				<link rel="icon" href="{% static 'img/favicon_32.png' %}" sizes="32x32">
+				<link rel="icon" href="{% static 'img/favicon_48.png' %}" sizes="48x48">
+				<link rel="icon" href="{% static 'img/favicon_96.png' %}" sizes="96x96">
+				<link rel="icon" href="{% static 'img/favicon_144.png' %}" sizes="144x144">
+	</head>
+	
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+		 <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="121" height="40" viewBox="0 0 1539.2 558.3" shape-rendering="geometricPrecision"><g fill="#fff"><path d="M155 124.3c-85.7 0-155 69.3-155 155v125C0 420.8 13.4 434 29.8 434s29.6-13.3 29.6-29.7l.2-126.6c.8-52 43.2-93.8 95.3-93.8 52 0 94.3 41.7 95 93.7v1.5c.2 41.5.3 83.8.3 125 0 16.5 13.2 29.8 29.6 29.8 16.3 0 29.7-13.2 29.7-29.7v-125c0-85.7-69.3-155-154.8-155zM905 124.3c-85.7 0-155 69.3-155 155v125c0 16.5 13.4 29.7 29.8 29.7s29.6-13.3 29.6-29.7l.2-126.6c.8-52 43.2-93.8 95.3-93.8 52 0 94.3 41.7 95 93.7h.2v1.5l.2 125c0 16.5 13.2 29.8 29.5 29.8s29.7-13.2 29.7-29.7v-125c0-85.7-69.3-155-154.8-155z"/></g><path d="M529 124.3c-85.4.5-154.3 70-154 155.4.3 85.4 69.7 154.5 155.2 154.3 34.5-.2 68-12 95.2-33.3v3.6c0 16.4 13.2 29.7 29.5 29.7s29.5-13.3 29.5-29.7l.2-126.3c-.6-85.4-70.3-154.2-155.7-153.7zm1 59.6c52.5 0 95.2 42.5 95.2 95.2 0 52.6-42.7 95.2-95.3 95.2-52.8 0-95.4-42.6-95.4-95.2 0-52.7 42.6-95.3 95.3-95.3z" fill="#fff"/><g><path d="M1280 124.3a155 155 0 0 0-155 155A155 155 0 0 0 1280 434a155 155 0 0 0 154.7-154.8 155 155 0 0 0-154.8-155zm0 59.6A95.3 95.3 0 0 1 1375 279a95.3 95.3 0 0 1-95.3 95.2 95.3 95.3 0 0 1-95.4-95.2A95.3 95.3 0 0 1 1280 184z" fill="#fff"/><path d="M1420.3 297.6c-54.2-1.2-99.7 55.3-78.4 101.4 3.2 8.7 10 20.3 16.7 26 0 0 6.8 4 8.4 8.2-25 2.3-42.8 26-39.3 48.2 4.6 44.8 54 79 102.4 76.8 41.3-.2 78-28.5 89.6-63.7 11-29.8 5-65-17.4-89 7-13.4 6.8-29.7 3.5-44.2-7.5-33-39.2-62.3-77.4-63.5-2.6-.2-5.3-.2-8-.2z" fill="#fff"/><path d="M1422 325.2c-30.6 0-55.4 23.4-55.4 52.4v.4c0 8.8 7.6 16 17 16 8.3 0 15.2-6 16.4-13.8v-2.6c0-11.5 9.8-21 22-21 12 0 22 9.5 22 21s-10 20.8-16.7 21h-9.8c-14 0-25.3 6.8-25.3 15.6 0 8.7 11.3 15.8 25.3 15.8 1.4 0 3 0 4.3-.2h3.6c20.4 0 36.8 16 36.8 35.3 0 19.4-16.5 35-37 35-17.4 0-32.5-11.6-35.4-23.2-2.8-11.5-9-16.2-16.4-16.2-9 0-15.7 6.5-15.7 15 0 2 0 4.4 1 6.6 9 32.6 43 53.2 78 47.7 36.8-6 62-38.3 57.3-73.3-2.6-18.5-13.3-35-29.5-45.7 8.2-9.4 12.7-21.2 12.7-33.4 0-29-24.7-52.4-55.3-52.4z" opacity=".8" fill="#83d6e8"/></g></svg>
+					</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#zastosowania">Zastosowania</a></li>
+				<li><a href="#produkty">Produkty</a></li>
+				<li><a href="#kontakt">Kontakt</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav> 
+		
+		<div class="jumbotron">
+			<div class="container-fluid text-center welcome">
+				<!--<h1>My Portfolio</h1> -->
+			<div class="welcome-container-image">
+				
+				<svg xmlns="http://www.w3.org/2000/svg" width="75%" height="110" viewBox="0 0 2560 681.3" shape-rendering="geometricPrecision"><g fill="#24b8d7"><path d="M259.6 0C116.2 0 0 116.2 0 259.6v209.7C0 497 22.4 519 50 519c27.4 0 49.5-22 49.5-49.7l.5-212c1.3-87.4 72.3-157.4 159.6-157.5 87.2 0 158.3 70 159.6 157.4v2.4c0 69.6.4 140.5.4 209.7 0 27.6 22.2 49.8 49.6 49.8 27.5 0 50-22 50-49.7V259.6C519 116.2 402.8 0 259.5 0zM1516.8 0c-143.4 0-259.6 116.2-259.6 259.6v209.7c0 27.7 22.4 49.8 50 49.8 27.4 0 49.5-22 49.5-49.7l.4-212c1.4-87.4 72.5-157.4 159.8-157.5 87.2 0 158.3 70 159.6 157.4v2.4c0 69.6.4 140.5.4 209.7 0 27.6 22 49.8 49.6 49.8 27.5 0 50-22 50-49.7V259.6C1776.3 116.2 1660 0 1516.7 0z"/></g><path d="M886.7 0c-143 .8-258.6 117.4-258 260.5.4 143.2 116.8 259 260 258.6 58-.2 114-19.8 159.5-55.8v6c0 27.7 22.2 50 49.6 50 27.5 0 49.6-22.3 49.6-50l.3-211.6c-1-143-117.8-258.4-261-257.6zm1.5 99.8c88.2 0 159.7 71.6 159.7 159.8 0 88.2-71.6 159.7-159.8 159.7-88.2 0-159.8-71.5-159.8-159.7 0-88.2 71.6-159.8 159.8-159.8z" fill="#24b8d7"/><g><path d="M2145.4 0a259.6 259.6 0 0 0-259.6 259.6A259.6 259.6 0 0 0 2145.4 519a259.6 259.6 0 0 0 119.5-29.3c-6.6-9.3-12.3-20.2-15.8-29.2-11.7-25.4-11.3-52.7-2.3-77.8a159.7 159.7 0 0 1-101.6 36.6 159.7 159.7 0 0 1-159.8-159.7 159.7 159.7 0 0 1 159.8-159.8A159.7 159.7 0 0 1 2305 259.6a159.7 159.7 0 0 1-12 61c24.3-19 55-30.8 87.8-30 4.5-.2 9 0 13.4.2 2.8 0 5.7.3 8.4.6a259.6 259.6 0 0 0 2.3-31.8 259.6 259.6 0 0 0-.6-10.8c-20-6-37.4-21-43.3-41.2-8-22.2.3-47 16.6-63.3A259.6 259.6 0 0 0 2145.4 0z" fill="#24b8d7"/><path d="M2383.5 336.7c-51.2 0-92.7 39.3-92.7 88v.6c0 14.8 12.6 26.8 28.2 26.8 14 0 25.7-10 27.6-23v-4.4c0-19.4 16.5-35 37-35 20.2 0 36.8 15.6 36.8 35 0 19.3-16.6 35-28 35l-16.4.4c-23.4 0-42.4 11.3-42.4 26 0 14.5 19 26.4 42.4 26.4 2.5 0 5 0 7.3-.3h6c34 0 61.7 27 61.7 59.3 0 32.4-27.7 58.6-61.8 58.6-29.4 0-54.7-19.7-59.5-39-4.8-19.4-15-27.3-27.5-27.3-15 0-26.4 10.8-26.4 25 0 3.7.2 7.6 1.5 11.3 15.5 54.5 72 89 131 79.8 61.5-9.7 104-64 96-122.6-4.3-31-22.3-59-49.6-76.6 14-15.7 21.4-35.6 21.5-56 0-6.3-.7-12.3-2-18.2-26.4-6.5-50-24-60-50-2.5-5.3-4.2-10.8-5.3-16.3-8.2-2-16.7-3.3-25.5-3.3z" opacity=".8" fill="#83d6e8"/><path d="M2420.7 145a43.8 43.8 0 0 0-43.8 44 43.8 43.8 0 0 0 43.7 43.8 43.8 43.8 0 0 0 44-43.8 43.8 43.8 0 0 0-44-44zm0 17a27 27 0 0 1 27 27 27 27 0 0 1-27 27 27 27 0 0 1-27-27 27 27 0 0 1 27-27zM2491.6 257c-42.4-.4-75.6 48.4-60 88 12.3 39.3 66 57.6 99.5 33.2 34.2-21.7 39.6-76.7 8.3-103.4-12.7-12-30.2-18.5-47.7-17.8zm4 20c33-.7 56.6 41 39 69-14.5 26.8-57.2 31.5-76 7-19.7-22.8-10-64 19.4-73 5.6-2.2 11.6-3.2 17.6-3z" fill="#83d6e8"/></g></svg>
+				
+			</div>
+				<p>The best nano-bubbles solutions</p>
+			</div>
+		</div>
+		
+		<section id="zastosowania" class="container-fluid bg-1 text-center" data-target="#navbar">    
+                <h1>O firmie
+                </h1>
+                <p>Ofertą firmy NanO3 jest dostawa nowoczesnych technologii uzdatniania wody opartych na wykorzystaniu specyficznych właściwości Mikro-Nano-Pęcherzyków, tak zwanych nanobąbelków, powstałych podczas wprowadzania do wody powietrza atmosferycznego lub gazów takich jak tlen, ozon, dwutlenek węgla.</p>
+			<p>
+					Proponowane przez NanO3 systemy znajdują zastosowanie w branży medycznej, kosmetycznej, SPA & Wellness, HoReCa a także w przeróżnych gałęziach przemysłu, głównie spożywczego oraz rolnictwie.
+			</p>
+		</section>
+		
+		<div id="produkty" class="container-fluid bg-2 text-center">
+			<h1>Co dalej?</h1>
+			<p>Aktualnie strona jest w budowie ale już niebawem zaprezentujemy Państwu naszą pełną ofertę. Zapraszamy ponownie lub prosimy o kontakt mailowy: info@nano3.pl</p>
+		</div>
+		
+		<footer id="kontakt" class="container-fluid bg-3 text-center">
+		<!--<h3></h3>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-3">
+			<p>NanO3 Sp z o.o. S.k.</p>
+			<p></p>
+			<p>ul. Chmielna 2 lok. 31</p>
+			<p>00-020 Warszawa</p>
+		</div>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-3">
+			<p>e-mail.: info@nano3.pl</p>
+			<p>NIP: 5252681947</p>
+			<p>REGON: 365725789</p>
+			<p>KRS: 0000644290</p>
+		</div>
+		<div class="col-sm-2"></div>-->
+		<h1></h1>
+		<p>NanO3 Sp z o.o. S.k.
+		<br>
+		ul. Chmielna 2 lok. 31
+		<br>
+		00-020 Warszawa
+		<br>
+		e-mail.: info@nano3.pl</p>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-3">NIP: 5252681947</div>
+		<div class="col-sm-2">REGON: 365725789</div>
+		<div class="col-sm-3">KRS: 0000644290</div>
+		<div class="col-sm-2"></div>
+		</footer>
+		<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 500);
+    } // End if
+  });
+})
+</script> 
+	</body>
+</html>
